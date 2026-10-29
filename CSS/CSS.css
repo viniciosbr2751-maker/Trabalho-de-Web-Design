@@ -1,7 +1,93 @@
-body{
-background-image: url(../iMAGENS/imagem_Principal.jpg);
-background-size: auto;
+body {
+    background-image: url(../iMAGENS/imagem_Principal.jpg);
+    background-size: 100vw;
+    margin: auto;
+    padding: 0;
+}
 
+nav .topo {
+   position:absolute;
+    margin: auto 0;
+    border: 1px solid #9b9999;
+    width: auto;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgb(223, 225, 227);
+    filter: blur(2px);
+   
 }
 
 
+.menu {
+    position: relative;
+    top: 2px;
+    margin-left: 90vw;
+    z-index: 1000;
+}
+
+.menu-lista {
+   display: none;
+    list-style: none;
+    z-index: 1000
+}
+
+.menu-lista a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-mobile {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.menu-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
+  .menu-lista {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        background: #2f3a45;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    }
+
+
+    .menu-lista li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        transition: 0.3s;
+    }
+
+
+    .menu-lista li a:hover {
+        background: #2aace9;
+    }
+
+
+    .menu-lista.ativo {
+        display: block;
+        animation: aparecer 0.3s ease;
+    }
