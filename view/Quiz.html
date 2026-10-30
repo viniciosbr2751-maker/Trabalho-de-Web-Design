@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atleta e Artista</title>
+    <link rel="stylesheet" href="../CSS/quiz.css">
+
+</head>
+
+<body>
+
+    <!----------------Abaixo o Header junto com a nav!!---------------------->
+
+    <header id="header">
+        <nav class="nav">
+
+            <button class="menu-btn">
+                ☰
+            </button>
+
+            <ul class="menu-lista">
+                <li><a href="../index.html">inicio</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!----------------Main Content abaixo, com as opções de seleções!!---------------------->
+
+    <main>
+
+        <div class="escolha" id="escolha">
+            <p class="selecao ">Quem você escolhe?</p>
+
+            <div class="cards">
+
+                <div class="card" onclick="carregarQuiz('yoongi')">
+                    <img src="../img/yoongi.jpg" alt="Yoongi">
+                    <a class="yoongi"> Yoongi</a>
+                </div>
+
+                <div class="card" onclick="carregarQuiz('iverson')">
+                    <img src="../img/iverson.jpg" alt="Allen Iverson">
+                    <a class="iverson"> Allen Iverson<a>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="quiz-area">
+
+            <div id="banner"></div>
+
+            <div class="barra">
+                <div id="progresso"></div>
+            </div>
+
+            <div id="quiz-container"></div>
+
+            <div id="resultado"></div>
+
+            <button id="voltar" onclick="voltarInicio()">
+                Escolher Outro
+            </button>
+
+        </section>
+
+    
+    </main>
+
+
+    <script src="../JS/quiz.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,318 @@
+body {
+    background-image: url(../img/imagem_Principal.jpg);
+    background-size: 100vw;
+    height: 65vw;
+    margin: auto;
+    padding: 0;
+    transition: .5s;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-------------------Topo abaixo--------------------------*/
+
+
+header{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:95%;
+    max-width:1800px;
+    height:80px;
+    background:#0a0a0a;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all .5s cubic-bezier(.22,1,.36,1);
+    z-index:999;
+}
+
+.nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+/* botão hamburguer */
+
+.menu-btn{
+    position: absolute;
+    background:none;
+    border:none;
+    margin-left: 0.1vw;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    opacity:1;
+    transition:.4s ease;
+}
+
+/* menu escondido */
+
+.menu-lista{
+    display:flex;
+    list-style:none;
+    gap:40px;
+    padding:0;
+    margin:0;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+    transition:.4s ease;
+}
+
+.menu-lista a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.menu-lista a:hover{
+    color:#43c5e6;
+}
+
+/* navbar reduzida */
+
+header.flotante{
+    width:75%;
+    max-width:1200px;
+    height:60px;
+    border-radius:24px;
+    background:rgba(10,10,10,.85);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* esconde hamburguer */
+
+header.flotante .menu-btn{
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+}
+
+/* mostra links */
+
+header.flotante .menu-lista{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* Main Content abaixo*/
+
+
+
+.escolha{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.escolha .selecao{
+margin-top: 5vw;
+text-align:center;
+    color:rgb(90, 88, 88);
+    font-size:3rem;
+    margin-bottom:50px;
+    text-shadow:0 4px 15px rgba(0,0,0,.4);
+
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top: 10vw;
+}
+
+.card{
+    width:359px;
+    height: 500px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    .card{
+    transition:.4s;
+}
+
+.card:hover{
+    transform:
+        translateY(-15px)
+        scale(1.05);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.25);
+}
+
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.3),
+        transparent
+    );
+
+    transition:.7s;
+}
+
+.card:hover::before{
+    left:100%;
+}
+
+.card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    display:block;
+}
+
+
+.card .yoongi{
+    padding:20px;
+    gap: 50px;
+    
+}
+
+
+
+.quiz-area{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+#banner{
+    display:none;
+    height:300px;
+    border-radius:20px;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:20px;
+}
+
+.barra{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+    display: none;
+}
+
+
+
+#progresso{
+    width:0%;
+    height:100%;
+    background:#22c55e;
+    transition:.4s;
+}
+
+.question{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.question .iverson{
+    margin-bottom:20px;
+}
+
+.question button{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.question button:hover{
+    opacity:.9;
+}
+
+.correct{
+    background:#22c55e;
+    color:white;
+}
+
+.wrong{
+    background:#ef4444;
+    color:white;
+}
+
+#resultado{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+#voltar{
+    display:none;
+    margin:20px auto;
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    background:#111827;
+    color:white;
+    cursor:pointer;
+}
+
+.yoongi{
+    font-size: 20px;
+    color:white;
+    background:linear-gradient(
+        90deg,
+        #cebde7,
+        #5016e0
+    );
+    margin:0;
+    text-align:center;
+}
+
+.iverson{
+    font-size: 20px;
+    color:white;
+    background:linear-gradient(
+        135deg,
+        #ea580c,
+        #fb923c
+    );
+    margin:0;
+    padding:20px;
+    text-align:center;
+}

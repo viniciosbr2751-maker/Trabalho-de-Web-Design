@@ -1,3 +1,5 @@
+// Nav responsiva 
+
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
@@ -14,13 +16,3 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
-// Menu 
-
-const menuBtn = document.getElementById("menuBtn");
-const menuLista = document.getElementById("menuLista");
-
-menuBtn.addEventListener("click", () => {
-    menuLista.classList.toggle("ativo");
-});
