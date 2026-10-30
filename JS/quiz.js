@@ -48,7 +48,7 @@ const quizzes = {
         banner: "img/banner-iverson.jpg",
 
         perguntas: [
-            {
+            {              
                 pergunta: "Qual era o apelido de Allen Iverson?",
                 opcoes: ["The Answer", "The King", "The Hero"],
                 correta: 0
@@ -153,13 +153,13 @@ function verificar(botao, resposta, correta) {
         let mensagem;
 
         if (score === totalPerguntas) {
-            mensagem = "🏆 Perfeito! Você acertou tudo!";
+            mensagem = "Perfeito! Você acertou tudo!";
         }
         else if (score >= totalPerguntas / 2) {
-            mensagem = "👏 Muito bem!";
+            mensagem = " Muito bem!!";
         }
         else {
-            mensagem = "📚 Hora de estudar mais!";
+            mensagem = "Hora de estudar mais! ç_ç";
         }
 
         document.getElementById("resultado").innerHTML = `
@@ -169,7 +169,7 @@ function verificar(botao, resposta, correta) {
 
         document.getElementById("voltar").style.display =
             "block";
-
+        document.getElementById("yoongi").style.color = "darkblue";
         
     }
 }
