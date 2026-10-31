@@ -153,7 +153,6 @@ function carregarTimeline(pessoa) {
 
             <p class="titulo">${evento.titulo}</p>
 
-           
 
             <p class="descricao">
                 ${evento.descricao}
