@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linha do Tempo</title>
+<link rel="stylesheet" href="../CSS/timeline.css">
+</head>
+
+<body data-tema="roxo">
+
+<header class="topo">
+
+    <a href="../index.html" class="voltar">
+        ← Voltar
+    </a>
+
+    <div class="seletor">
+        <button onclick="carregarTimeline('yoongi')">
+            Yoongi
+        </button>
+
+        <button onclick="carregarTimeline('iverson')">
+            Allen Iverson
+        </button>
+    </div>
+
+</header>
+
+<section class="perfil">
+
+    <img id="fotoPerfil" src="" alt="Perfil">
+
+    <p class="nome" id="nome"></p>
+
+    <p class="papel" id="papel"></p>
+
+    <p class="bio" id="bio"></p>
+
+</section>
+
+<div id="anos" class="anos"></div>
+
+<section id="timeline" class="timeline"></section>
+
+<script src="../JS/timeline.js"></script>
+
+</body>
+</html>
