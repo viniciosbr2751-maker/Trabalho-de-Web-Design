@@ -31,6 +31,115 @@
         </nav>
     </header>
 
+    <!----------------Abaixo a main junto dos banners---------------------->
+
+    <main>
+
+<section class="cards">
+
+    <!-- YOONGI -->
+
+    <div class="card yoongi">
+
+        <div class="foto">
+            <img src="img/foto index.webp" alt="Yoongi">
+        </div>
+
+        <div class="conteudo">
+
+            <div class="texto">
+
+                <p class="nome">Min Yoongi</p>
+
+                <p class="funcao">
+                    Rapper, produtor musical e membro do BTS.
+                </p>
+
+                <p class="descricao">
+                    Conhecido também como Agust D,
+                    tornou-se um dos artistas
+                    sul-coreanos mais influentes da atualidade.
+                </p>
+
+                <button
+                class="botao-video"
+                onclick="abrirVideo('videoYoongi',this)">
+                    Assistir vídeo
+                </button>
+
+            </div>
+
+            <div class="video-area" id="videoYoongi">
+
+                <iframe
+                src="https://www.youtube.com/embed/iy9qZR_OGa0"
+                allowfullscreen>
+                </iframe>
+
+                <button
+                onclick="fecharVideo('videoYoongi')">
+                    Voltar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- IVERSON -->
+
+    <div class="card iverson">
+
+        <div class="foto">
+            <img src="img/iverson index.jpg" alt="Iverson">
+        </div>
+
+        <div class="conteudo">
+
+            <div class="texto">
+
+                <p class="nome">Allen Iverson</p>
+
+                <p class="funcao">
+                    Ex-jogador profissional de basquete.
+                </p>
+
+                <p class="descricao">
+                    Considerado um dos maiores armadores
+                    da história da NBA e um ícone cultural.
+                </p>
+
+                <button
+                class="botao-video"
+                onclick="abrirVideo('videoIverson',this)">
+                    Assistir vídeo
+                </button>
+
+            </div>
+
+            <div class="video-area" id="videoIverson">
+
+                <iframe
+                src="https://www.youtube.com/embed/NAZvvaT79g8"
+                allowfullscreen>
+                </iframe>
+
+                <button
+                onclick="fecharVideo('videoIverson')">
+                    Voltar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
 
 
     <script src="JS/Script.js"></script>
